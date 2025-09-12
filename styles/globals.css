@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "kangwon-light";
+  src: url("../styles/font/kangwon_light.otf");
+}
+
+@font-face {
+  font-family: "kangwon-bold";
+  src: url("../styles/font/kangwon_bold.otf");
+}
+
+@layer components {
+  .wrapper {
+    @apply w-screen min-h-screen overflow-x-hidden bg-pink1 flex flex-col items-center pb-4;
+  }
+  .title {
+    @apply font-kangwon-bold text-4xl pt-20;
+  }
+}
