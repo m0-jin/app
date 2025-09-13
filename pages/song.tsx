@@ -2,9 +2,8 @@ import React from "react";
 import Bar from "../components/Bar";
 import bday from "../public/image/bday.jpg";
 import Image from "next/image";
-import YouTube from "react-youtube";
 
-const song = () => {
+const Song = () => {
   return (
     <div className="wrapper">
       <span className="title py-20">🎶 Song</span>
@@ -12,16 +11,13 @@ const song = () => {
       <div className="w-[500px] pt-20">
         <Image alt="" src={bday} objectFit="contain" />
       </div>
-      <YouTube
-        videoId="VPB1rKd19RM"
-        opts={{
-          width: "560",
-          height: "315",
-          playerVars: { autoplay: 1, rel: 0, modestbranding: 1 },
-        }}
-      />
+      {/* 오디오 추가 */}
+      <audio autoPlay loop controls>
+        <source src="/image/Birthday.mp3" type="audio/mpeg" />
+        브라우저가 오디오 태그를 지원하지 않습니다.
+      </audio>
     </div>
   );
 };
 
-export default song;
+export default Song;
