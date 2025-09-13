@@ -12,7 +12,7 @@ const Timer = () => {
   };
   return (
     <div className="flex flex-col items-center space-y-4 py-8 bg-blue1 shadow-md rounded-lg w-[70%] ">
-      <span className="font-kangwon-bold text-xl text-white">~ 선물까지 ~</span>
+      <span className="font-kangwon-bold text-xl text-white">~ 종료까지 남은 시간 ~</span>
       <span className="font-kangwon-bold text-3xl text-white">
         {day}일 {hours}시간 {minutes}분 {seconds}초
       </span>
