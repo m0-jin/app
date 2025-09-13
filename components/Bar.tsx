@@ -7,25 +7,25 @@ const Bar = () => {
     <div className="w-full flex items-center px-10 font-kangwon-bold text-lg justify-evenly py-2 ">
       <div
         onClick={() => router.push("/")}
-        className="px-4 py-2 flex items-center justify-center rounded-lg hover:cursor-pointer hover:bg-purple1/50 transition-all"
+        className="px-4 py-2 flex items-center justify-center rounded-lg hover:cursor-pointer hover:bg-blue1/50 transition-all"
       >
         Home
       </div>
       <div
         onClick={() => router.push("/gift")}
-        className="px-4 py-2 flex items-center justify-center rounded-lg hover:cursor-pointer hover:bg-purple1/50 transition-all"
+        className="px-4 py-2 flex items-center justify-center rounded-lg hover:cursor-pointer hover:bg-blue1/50 transition-all"
       >
         Gift
       </div>
       <div
         onClick={() => router.push("/photo")}
-        className="px-4  py-2 flex items-center justify-center  rounded-lg hover:cursor-pointer hover:bg-purple1/50 transition-all"
+        className="px-4  py-2 flex items-center justify-center  rounded-lg hover:cursor-pointer hover:bg-blue1/50 transition-all"
       >
         Photo
       </div>
       <div
         onClick={() => router.push("/song")}
-        className="px-4 py-2 flex items-center justify-center  rounded-lg hover:cursor-pointer hover:bg-purple1/50 transition-all"
+        className="px-4 py-2 flex items-center justify-center  rounded-lg hover:cursor-pointer hover:bg-blue1/50 transition-all"
       >
         Song
       </div>
