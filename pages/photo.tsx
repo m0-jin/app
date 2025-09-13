@@ -33,7 +33,7 @@ const Photo = () => {
         <div className="px-4 bg-white flex flex-col items-center  pt-4 pb-16">
           <img src={imgSrc} />
           <span className="font-kangwon-bold text-xl pt-4">
-            2022. 8. 15. 소영 생일 기념🎉
+            2025. 9. 18. 준혁오빠 생일 기념🎉
           </span>
         </div>
       )}
