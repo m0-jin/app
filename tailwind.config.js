@@ -11,9 +11,9 @@ module.exports = {
         "kangwon-bold": ["kangwon-bold", "sans-serif"],
       },
       colors: {
-        pink1: "#FCE2DB",
-        purple1: "#B270A2",
-        purple2: "#7A4495",
+        skyblue1: "#b3e5fc",
+        blue1: "#6879D0",
+        blue2: "#4556ad",
       },
     },
   },
