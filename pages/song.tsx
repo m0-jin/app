@@ -115,8 +115,8 @@ export default function Song() {
             <Image
               src="/image/bday.jpg"
               alt="Birthday"
-              fill
-              className="object-cover"
+              layout="fill"  
+              objectFit="cover"
               priority
             />
           </div>
