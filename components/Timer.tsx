@@ -5,24 +5,24 @@ import Modal from "./Modal";
 type Letter = {
   quiz: string;
   answer: string;
-  content: string;
+  image: string; // ✅ 쿠폰 이미지 경로만 사용
 };
 
 const letters: Letter[] = [
   {
     quiz: "Q1. 내가 제일 여행 가고 싶어하는 나라는?",
     answer: "포르투칼",
-    content: "쿠폰 1 💌\n명진이와의 포르투칼 여행 쿠폰",
+    image: "image/coupon1.png",
   },
   {
     quiz: "Q2. 9월 18일 기준, 우리가 만난지 얼마나 됐을까? (숫자만)",
     answer: "961",
-    content: "쿠폰 2 💌\nUFC 경기 관람권",
+    image: "image/coupon2.png",
   },
   {
     quiz: "Q3. 최근 내가 제일 좋아하는 색깔은? (예, 00색)",
     answer: "초록색",
-    content: "쿠폰 3 💌\n첼시 경기 관람권",
+    image: "image/coupon3.png",
   },
 ];
 
@@ -42,7 +42,7 @@ const Timer = () => {
       const newSolved = [...solved];
       newSolved[index] = true;
       setSolved(newSolved);
-      setOpenedLetter(null); // 퀴즈창 닫기
+      setOpenedLetter(null);
       setInput("");
     } else {
       alert("정답이 아니에요! 다시 시도해보세요.");
@@ -61,7 +61,7 @@ const Timer = () => {
         </span>
         <button
           onClick={onClick}
-          className="w-[40%] py-2 bg-blue2 text-white rounded-full shadow-md font-kangwon-bold hover:bg-blue2/80 transition-all"
+          className="w-[40%] py-2 bg-blue2 text-white rounded-full shadow-md font-kangwon-bold hover:cursor-pointer hover:bg-blue2/80 transition-all"
         >
           선물 받으러 가기
         </button>
@@ -79,9 +79,7 @@ const Timer = () => {
                 <>
                   {openedLetter === index ? (
                     <>
-                      <div className="mb-2 font-kangwon-bold">
-                        {letter.quiz}
-                      </div>
+                      <div className="mb-2 font-kangwon-bold">{letter.quiz}</div>
                       <input
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
@@ -105,9 +103,11 @@ const Timer = () => {
                   )}
                 </>
               ) : (
-                <div className="whitespace-pre-line text-gray-700">
-                  {letter.content}
-                </div>
+                <img
+                  src={letter.image}
+                  alt={`쿠폰 ${index + 1}`}
+                  className="w-40 h-40 object-contain"
+                />
               )}
             </div>
           ))}
