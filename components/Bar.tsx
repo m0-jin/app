@@ -9,7 +9,7 @@ const Bar = () => {
         onClick={() => router.push("/")}
         className="px-4 py-2 flex items-center justify-center rounded-lg hover:cursor-pointer hover:bg-purple1/50 transition-all"
       >
-        home
+        Home
       </div>
       <div
         onClick={() => router.push("/gift")}
