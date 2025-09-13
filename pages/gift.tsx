@@ -8,7 +8,7 @@ const Gift = () => {
       <span className="title py-20">🎁Gift</span>
       <Bar />
       <span className="font-kangwon-light text-lg py-10">
-        선물은 수능 끝나고 사줄게..😅
+      완전 감동이지..😊
       </span>
       <Timer />
     </div>
