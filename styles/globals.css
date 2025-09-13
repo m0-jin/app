@@ -14,7 +14,7 @@
 
 @layer components {
   .wrapper {
-    @apply w-screen min-h-screen overflow-x-hidden bg-sky-200 flex flex-col items-center pb-4;
+    @apply w-screen min-h-screen overflow-x-hidden bg-skyblue1 flex flex-col items-center pb-4;
   }
   .title {
     @apply font-kangwon-bold text-4xl pt-20;
