@@ -165,12 +165,6 @@ export default function Song() {
               })}
             </div>
           </div>
-
-          <div className="mt-3 text-sm text-gray-500">
-            자동 줄높이: 각 줄의 실제 <code>offsetHeight</code>를 측정해서
-            현재 줄 중심을 컨테이너 중앙에 오도록 <code>translateY</code>를
-            계산합니다.
-          </div>
         </div>
       </div>
     </div>
