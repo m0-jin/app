@@ -22,7 +22,7 @@ const Photo = () => {
         </span>
         <Webcam audio={false} ref={webcamRef} screenshotFormat="image/jpeg" />
         <button
-          className="w-[150px] h-[70px] bg-purple1 rounded-xl text-white text-2xl font-kangwon-bold"
+          className="w-[150px] h-[70px] bg-blue1 rounded-xl text-white text-2xl font-kangwon-bold"
           onClick={capture}
         >
           📷 찰칵!
