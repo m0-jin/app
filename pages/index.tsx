@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import image from "../public/image/img.jpg";
+import image from "../public/image/jun.jpg";
 import Bar from "../components/Bar";
 import { useRouter } from "next/router";
 
