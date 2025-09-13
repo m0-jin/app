@@ -8,7 +8,7 @@ const About = () => {
     <div className="wrapper">
       <span className="title py-20">🎈About</span>
       <Bar />
-      <div className="font-kangwon-light text-xl space-y-8 flex flex-col items-center py-10 border-2 border-purple1 px-8 rounded-lg mt-8 bg-purple1/30">
+      <div className="font-kangwon-light text-xl space-y-8 flex flex-col items-center py-10 border-2 border-blue1 px-8 rounded-lg mt-8 bg-blue1/30">
         <span>* 사용된 기술 : React.js, Next.js, Typescript, TailwindCSS</span>
         <span>* 개발 기간 : 2025. 9. 13. ~ 9.18 </span>
         <span>* Made by 멍진🧚 </span>
@@ -16,7 +16,7 @@ const About = () => {
           onClick={() =>
             router.push("https://github.com/m0-jin/app")
           }
-          className="w-[150px] h-[50px] bg-purple2 text-white rounded-xl hover:cursor-pointer hover:bg-purple1/80 transition-all"
+          className="w-[150px] h-[50px] bg-blue2 text-white rounded-xl hover:cursor-pointer hover:bg-blue1/80 transition-all"
         >
           Github
         </button>
