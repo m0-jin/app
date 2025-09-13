@@ -11,14 +11,14 @@ const Timer = () => {
     }
   };
   return (
-    <div className="flex flex-col items-center space-y-4 py-8 bg-purple1 shadow-md rounded-lg w-[70%] ">
+    <div className="flex flex-col items-center space-y-4 py-8 bg-blue1 shadow-md rounded-lg w-[70%] ">
       <span className="font-kangwon-bold text-xl text-white">~ 선물까지 ~</span>
       <span className="font-kangwon-bold text-3xl text-white">
         {day}일 {hours}시간 {minutes}분 {seconds}초
       </span>
       <button
         onClick={onClick}
-        className="w-[40%] py-2 bg-purple2 text-white rounded-full shadow-md font-kangwon-bold"
+        className="w-[40%] py-2 bg-blue2 text-white rounded-full shadow-md font-kangwon-bold"
       >
         선물 받으러 가기
       </button>
