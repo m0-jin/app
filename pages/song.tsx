@@ -1,6 +1,6 @@
 import React from "react";
 import Bar from "../components/Bar";
-import bday from "../public/image/bday.png";
+import bday from "../public/image/bday.jpg";
 import Image from "next/image";
 import YouTube from "react-youtube";
 
