@@ -8,7 +8,7 @@ const Index = () => {
   const router = useRouter();
   return (
     <div className="wrapper relative">
-      <span className="title py-20 ">🎉준혁이의 생일을 축하합니다🎉</span>
+      <span className="title py-20 ">🎉준혁오빠 생일축하해🎉</span>
       <Bar />
       <div className="w-[500px] pt-20">
         <Image alt="junhyeok-pic" src={image} objectFit="contain" />
